@@ -6,3 +6,10 @@ body {
   font-family: "Ubuntu", sans-serif;
   min-height: 100vh;
 }
+.navbar {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 1.8rem 0;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
