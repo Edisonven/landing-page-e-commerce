@@ -21,6 +21,7 @@ body {
   color: white;
   padding: 1.8rem 3rem;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
+  box-shadow: -3px 7px 10px black;
 }
 .buscador {
   display: flex;
@@ -44,7 +45,7 @@ body {
   color: black;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 1rem 0;
 }
 .sidebar {
