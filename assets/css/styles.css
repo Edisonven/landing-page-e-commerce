@@ -16,9 +16,9 @@ body {
   );
 }
 .navbar {
-  background-color: blue;
+  display: flex;
+  justify-content: space-between;
   color: white;
-  text-align: center;
-  padding: 1.8rem 0;
+  padding: 1.8rem 3rem;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
