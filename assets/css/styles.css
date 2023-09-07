@@ -67,10 +67,6 @@ body {
   min-height: 100vh;
   grid-area: sidebar;
 }
-.main {
-  display: flex;
-  max-width: 1400px;
-}
 .section {
   grid-area: section;
 }
@@ -139,8 +135,7 @@ body {
     -225deg,
     #231557 0%,
     #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    #ff1361 67%
   );
   text-align: center;
   width: 300px;
