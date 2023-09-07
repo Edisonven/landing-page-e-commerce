@@ -19,9 +19,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-areas:
-    "navbar navbar"
-    "sidebar main"
-    "footer footer";
+    "navbar navbar navbar"
+    "sidebar main section"
+    "footer footer footer";
 }
 .navbar {
   grid-area: navbar;
@@ -73,6 +73,11 @@ body {
   display: flex;
   max-width: 1400px;
 }
+.section {
+  grid-area: section;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
 .categorias-title h1 {
   padding: 3rem 0;
   font-weight: 700;
@@ -94,6 +99,40 @@ body {
   padding: 0.3rem;
   border-radius: 10px;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7509e8;
+  text-align: center;
+  width: 350px;
+  padding: 0.3rem;
+  border-radius: 10px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+}
+.card-info-title {
+  margin: 1rem 0;
+  color: #fff;
+  padding: 0 1rem;
+}
+.card-info-link {
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #000000;
+  background-color: #fff;
+  padding: 0.4rem 1.3rem;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.card-info-link:hover {
+  opacity: 50%;
+}
+.card-gaming {
+  width: 150px;
+  margin-bottom: 1rem;
 }
 .card a:hover {
   background-color: white;
