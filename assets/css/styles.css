@@ -22,3 +22,17 @@ body {
   padding: 1.8rem 3rem;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+[placeholder] {
+  display: block;
+  height: 2rem;
+}
