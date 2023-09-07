@@ -15,7 +15,15 @@ body {
     #e9e9e7 100%
   );
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas:
+    "navbar navbar"
+    "sidebar main";
+}
 .navbar {
+  grid-area: navbar;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -50,6 +58,12 @@ body {
 }
 .sidebar {
   min-height: 100vh;
+  grid-area: sidebar;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  max-width: 1600px;
 }
 .categorias-title h1 {
   padding: 3rem 0;
@@ -57,16 +71,43 @@ body {
 }
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 3rem;
+  justify-content: center;
+  gap: 3rem;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(178, 178, 192);
+  background-color: rgb(211 211 211);
   text-align: center;
   width: 350px;
   padding: 0.3rem;
+  border-radius: 10px;
 }
 .card-img {
   width: 100%;
+  border-radius: inherit;
+}
+.card-title {
+  margin: 1rem 0;
+}
+.card-descripción {
+  border-top: 1px solid black;
+  padding: 1.5rem 0;
+}
+.card-precio {
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+.card-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #434343;
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
