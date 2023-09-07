@@ -36,3 +36,21 @@ body {
   display: block;
   height: 2rem;
 }
+.contenido {
+  display: flex;
+  flex-direction: column;
+}
+.contenido a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.sidebar {
+  min-height: 100vh;
+}
+.categorias-title h1 {
+  padding: 3rem 0;
+  font-weight: 700;
+}
