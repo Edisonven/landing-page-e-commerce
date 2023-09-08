@@ -213,6 +213,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding-left: 2rem;
+  padding-right: 1rem;
 }
 .footer-cards {
   display: flex;
@@ -222,6 +223,7 @@ body {
 }
 .footer-info {
   padding-right: 3rem;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
   gap: 2rem;
