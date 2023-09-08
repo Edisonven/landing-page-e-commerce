@@ -4,7 +4,6 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
-  min-height: 100vh;
   background-color: #e4e4e1;
   background-image: linear-gradient(
     to top,
