@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   color: white;
-  padding: 1.8rem 3rem;
+  padding: 1.3rem 3rem;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   box-shadow: -3px 7px 10px black;
 }
@@ -204,7 +204,7 @@ body {
   grid-area: footer;
   background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
   color: white;
-  padding: 1.5rem 0;
+  padding: 1.3rem 0;
   box-shadow: -3px -3px 15px black;
   display: flex;
   align-items: center;
