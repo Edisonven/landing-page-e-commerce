@@ -4,7 +4,6 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #e4e4e1;
   background-image: linear-gradient(
     to top,
     #d5d4d0 0%,
@@ -219,6 +218,7 @@ body {
   display: flex;
   gap: 1rem;
   margin-left: 5rem;
+  align-items: center;
 }
 .footer-info {
   padding-right: 3rem;
