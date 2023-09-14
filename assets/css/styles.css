@@ -75,7 +75,9 @@ body {
   opacity: 50%;
 }
 /*APARTADO MENU PRINCIPAL*/
-
+.main{
+  grid-area: main;
+}
 .main__cards {
   display: flex;
   flex-wrap: wrap;
