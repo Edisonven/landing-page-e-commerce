@@ -20,6 +20,8 @@ body {
     "sidebar main section"
     "footer footer footer";
 }
+
+/*APARTADO BARRA DE NAVEGACIÓN*/
 .navbar {
   grid-area: navbar;
   display: flex;
@@ -29,7 +31,7 @@ body {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   box-shadow: -3px 7px 10px black;
 }
-.buscador {
+.navbar__search {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -39,24 +41,13 @@ body {
   align-items: center;
   gap: 1rem;
 }
-[placeholder] {
+.navbar__placeholder {
   display: block;
   height: 2rem;
+  text-transform: uppercase;
 }
-.categorias-contenido {
-  display: flex;
-  flex-direction: column;
-}
-.categorias-contenido a {
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.1rem;
-  padding: 1rem 0;
-}
-.categorias-contenido a:hover {
-  opacity: 50%;
-}
+/*APARTADO BARRA LATERAL*/
+
 .sidebar {
   display: flex;
   align-items: center;
@@ -65,14 +56,27 @@ body {
   min-height: 100vh;
   grid-area: sidebar;
 }
-.section {
-  grid-area: section;
-}
-.categorias-title h1 {
+.sidebar__title {
   padding: 3rem 0;
   font-weight: 700;
 }
-.cards {
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__link {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+.sidebar__link:hover {
+  opacity: 50%;
+}
+/*APARTADO MENU PRINCIPAL*/
+
+.main__cards {
   display: flex;
   flex-wrap: wrap;
   margin: 3rem 0rem;
@@ -80,7 +84,7 @@ body {
   gap: 3rem;
   max-width: 100%;
 }
-.card {
+.main__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,11 +95,49 @@ body {
   border-radius: 10px;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
 }
-.cards-info {
+.main__card__img {
+  width: 100%;
+  border-radius: inherit;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+}
+.main__card__title {
+  margin: 1rem 0;
+}
+.main__card__descripción {
+  border-top: 1px solid black;
+  padding: 1.5rem 0;
+}
+.main__card__precio {
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+.main__card__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #434343;
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.main__card__link:hover {
+  background-color: white;
+  color: #434343;
+  font-weight: 700;
+}
+
+/*APARTADO SECCIÓN DERECHA*/
+.right__section {
+  grid-area: section;
+}
+.right__section__cards {
   margin-top: 3rem;
   padding: 0 2rem;
 }
-.card-info {
+.right__section__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,12 +148,16 @@ body {
   border-radius: 10px;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
 }
-.card-info-title {
+.right__section__card__title {
   margin: 1rem 0;
   color: #fff;
   padding: 0 1rem;
 }
-.card-info-link {
+.right__section__card__img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.right__section__card__link {
   display: block;
   text-decoration: none;
   font-size: 1.3rem;
@@ -122,82 +168,20 @@ body {
   margin-bottom: 1rem;
   font-weight: 700;
 }
-.card-info-link:hover {
+.right__section__card__link:hover {
   opacity: 50%;
 }
-.card-info2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.right__section__card--2 {
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
     #ff1361 67%
   );
-  text-align: center;
-  width: 270px;
-  padding: 0.3rem;
-  border-radius: 10px;
-  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
   margin-top: 3rem;
 }
-.card-info2-title {
-  margin: 1rem 0;
-  color: #fff;
-  padding: 0 1rem;
-}
-.card-info2-link {
-  display: block;
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: #000000;
-  background-color: #fff;
-  padding: 0.4rem 1.3rem;
-  border-radius: 30px;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-.card-info2-link:hover {
-  opacity: 50%;
-}
-.card-gaming {
-  width: 150px;
-  margin-bottom: 1rem;
-}
-.card a:hover {
-  background-color: white;
-  color: #434343;
-  font-weight: 700;
-}
-.card-img {
-  width: 100%;
-  border-radius: inherit;
-  height: 200px;
-  object-fit: cover;
-  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
-}
-.card-title {
-  margin: 1rem 0;
-}
-.card-descripción {
-  border-top: 1px solid black;
-  padding: 1.5rem 0;
-}
-.card-precio {
-  padding-bottom: 2rem;
-  font-size: 1.3rem;
-}
-.card-link {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  background-color: #434343;
-  padding: 0.4rem 2rem;
-  border-radius: 5px;
-  margin-bottom: 2rem;
-}
+/*APARTADO FOOTER*/
 .footer {
   grid-area: footer;
   background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
@@ -208,26 +192,26 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.footer-title {
+.footer__first__section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
 }
-.footer-cards {
+.footer__payment__method {
   display: flex;
   gap: 1rem;
   margin-left: 3rem;
   align-items: center;
 }
-.footer-info {
+.footer__second__section{
   padding-right: 3rem;
   padding-left: 1rem;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.footer-info a:hover {
+.footer__second__section__link:hover {
   opacity: 50%;
 }
