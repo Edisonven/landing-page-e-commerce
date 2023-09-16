@@ -92,7 +92,6 @@ body {
   align-items: center;
   background-color: rgb(211 211 211);
   text-align: center;
-  flex-basis: 320px;
   padding: 0.3rem;
   border-radius: 10px;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
@@ -100,7 +99,7 @@ body {
 .main__card__img {
   width: 100%;
   border-radius: inherit;
-  height: 200px;
+  height: 225px;
   object-fit: cover;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
 }
