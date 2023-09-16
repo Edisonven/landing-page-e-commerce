@@ -15,6 +15,7 @@ body {
 }
 .container {
   display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     "navbar navbar navbar"
     "sidebar main section"
@@ -75,16 +76,15 @@ body {
   opacity: 50%;
 }
 /*APARTADO MENU PRINCIPAL*/
-.main{
+.main {
   grid-area: main;
 }
 .main__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 340px));
   margin: 3rem 0rem;
   justify-content: center;
   gap: 3rem;
-  max-width: 100%;
 }
 .main__card {
   display: flex;
@@ -207,7 +207,7 @@ body {
   margin-left: 3rem;
   align-items: center;
 }
-.footer__second__section{
+.footer__second__section {
   padding-right: 3rem;
   padding-left: 1rem;
   display: flex;
