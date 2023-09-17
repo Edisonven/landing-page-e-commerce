@@ -23,6 +23,8 @@ body {
 }
 
 /*APARTADO BARRA DE NAVEGACIÓN*/
+
+
 .navbar {
   grid-area: navbar;
   display: flex;
@@ -76,6 +78,8 @@ body {
   opacity: 50%;
 }
 /*APARTADO MENU PRINCIPAL*/
+
+
 .main {
   grid-area: main;
 }
@@ -132,6 +136,9 @@ body {
 }
 
 /*APARTADO SECCIÓN DERECHA*/
+
+
+
 .right__section {
   grid-area: section;
 }
@@ -183,7 +190,11 @@ body {
   );
   margin-top: 3rem;
 }
+
+
 /*APARTADO FOOTER*/
+
+
 .footer {
   grid-area: footer;
   background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
